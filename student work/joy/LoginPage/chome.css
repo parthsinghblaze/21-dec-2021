@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+}
+/*----------- Navbar start -----------------*/
+.leftnav{
+    width: 20%;
+    align-items: center;
+}
+.logo{
+    width: 52%;
+    padding: 0px 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 110%;
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    height: 9%;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e5e5;
+    position: sticky;
+    top:0;
+    z-index: 10000;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 25px 22px;
+    
+}
+.nav-list li a{
+    text-decoration: none;
+    padding: 0px 20px;
+    color: #000000;
+    transition: 0.2s;
+    font-size: 160%;
+   
+}
+.centernav{
+    width: 60%;
+    justify-content: center;
+}
+.rightnav{
+    width: 20%;
+}
+.button1{
+        margin: 74px;
+}
+.btn1{
+    width: 120px;
+    height: 41px;
+    padding: 0px;
+    border: 2px solid #000000;
+    font-size: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+.btn1:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.nav-list li a:hover{
+    text-decoration:none;
+    color: #ffffff;
+  
+}
+.btn{
+    width: 192px;
+    height: 56px;
+    padding: 7px;
+    margin: auto;
+    border: 2px solid #F08121;
+    background-color: #F08121;
+    color: #ffffff;
+    font-size: 28px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #ffffff;
+    color: #F08121;
+} 
+/*----------- Navbar end -----------------*/
+
+/*----------- section-1 Home Start -----------------*/
+
+.sec-1{
+    height: 91vh;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url(image/bg-3.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+}
+
+.sec-1 .sec-text{
+    font-size: 60px;
+    padding-left: 23%;
+    padding-top: 9%;
+    letter-spacing: 5px;
+    color: #ffffff;
+}
+.sec-1 .sec-text p{
+  font-family: 'Dancing Script', cursive;
+}
+.sec-1 .sec-text p::first-letter{
+    font-size: 120px;
+}
+
+/*----------- section-1 Home End -----------------*/
+
+/*----------- section-1 Gallery Start -----------------*/
+
+.GallerySec-1{
+    height: 91vh;
+    text-align: center;
+}
+.gal-box {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  display: inline-block;
+  margin: 20px;
+}
+
+.gal-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.boxsec-2{
+    height: 91vh;
+    background: radial-gradient(#fff,#bfbfbf);
+}
+.Box-main{
+    padding-left: 4%;
+    padding-top: 8%;
+}
+.galbox {
+  width: 400px;
+  height: 400px;
+  background-color: black;
+  display: inline-block;
+  margin: 7px;
+}
+.galbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*----------- section-2 Gallery End -----------------*/
+
+/*----------- section-1 Login Page Start -----------------*/
+
+.Log-backgro{
+    height: 91vh;
+    background: radial-gradient(#fff,#c5c5c5);
+}
+.Both-box{
+    display: flex;
+    justify-content: center;
+    padding-top: 7%; 
+}
+.PicBox-1{
+    width: 450px;
+    height: 450px;
+    background-color: #000;
+    box-shadow: 10px 16px 20px 0px #898989;    
+}
+.PicBox-1 img{
+    background-size: cover;
+}
+.PicBox-2{
+    width: 450px;
+    height: 450px;
+    background-color: #fff;
+    box-shadow: 13px 20px 20px 0px #898989;
+}
+.Text-box{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form h3 {
+  color: #000;
+  text-align: center;
+  font-size: 30px;
+  font-family: "ITC Franklin Gothic";
+  margin: 9%;
+}
+
+form input {
+  width: 100%;
+  padding: 10px 10px 10px 20px;
+  outline: none;
+  border: none;
+  border-left: 4px solid #000;
+  background-color:#d9d9d9; 
+}
+
+form .pas a {
+  float: right;
+  color: #858585;
+  padding-top: 2%;
+    
+}
+.bt-main{
+    align-items: center;
+}
+.btn-1{
+    width: 100%;
+    height: 40px;
+    padding: 0px;
+    border: 2px solid #000000;
+    font-size: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.btn-1:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/*----------- section-1 Login Page End -----------------*/
+
+
+
+
+
+/*----------- section-3 Sec-3 Start -----------------*/
+
+/*----------- section-3 Sec-3 End -----------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

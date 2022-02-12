@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 
+        There are 5 type selector in CSS
+        1 -> Simple Selector
+        2 -> combinator Selector
+        3 -> attribute Selector
+        4 -> pseudo class
+        5 -> pseudo element
+     -->
+
+  <!-- 
+         In Simple Selector there 4 selector
+
+         1 -> Tag selector (h1)
+         2 -> class selector (.className)
+         3 -> ID selector (#IdName)
+         4 -> universal selector (*)
+      -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        color: red;
+        font-size: 32px;
+    }
+
+      .heading1 {
+        color: red;
+        background-color: black;
+      }
+
+      .heading2 {
+        color: blue;
+        font-size: 100px;
+      }
+
+      .heading3 {
+        color: green;
+      }
+
+      .f-size {
+        font-size: 50px;
+      }
+
+      #intro {
+        color: cadetblue;
+      }
+
+      /* h2,p,li{
+            color: red;
+        } */
+    </style>
+  </head>
+  <body>
+      <h1>Hello Vishal</h1>
+    <h2>hello world</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit expedita
+      est maxime facere atque rem odit natus nam cumque dolorum qui accusamus
+      modi perspiciatis saepe, temporibus consequuntur nostrum. Eaque, vel.
+    </p>
+
+    <ul>
+      <li>Home</li>
+      <li>Home</li>
+      <li>Home</li>
+      <li>Home</li>
+    </ul>
+
+    <!-- Element p class="paraclass" => red id="paraId" => blue -->
+    <!-- ID Selector -->
+    <!-- we can only give ID to an element  -->
+    <h2 id="intro">I am a ID Selector</h2>
+    <!-- tag selector -->
+    <!-- red -->
+    <!-- we can add more then one classes in an element -->
+    <h1 class="heading1 f-size">Hello World 1</h1>
+    <!-- blue -->
+    <h1 class="heading2">Hello World 2</h1>
+    <!-- green -->
+    <h1 class="heading3 f-size">Hello World 3</h1>
+  </body>
+</html>

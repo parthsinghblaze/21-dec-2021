@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1::before {
+        content: "Hello ";
+        color: red;
+      }
+
+      h1::after {
+        content: " Good Afternoon";
+        background-color: slateblue;
+        color: black;
+      }
+
+      h1 {
+        color: silver;
+      }
+
+      p::first-line {
+        color: red;
+      }
+
+      p::first-letter {
+        font-size: 32px;
+      }
+
+      *::selection {
+        background-color: black;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit saepe
+      iusto sequi deleniti natus eum aliquid, dolores eveniet maxime veniam et,
+      voluptatibus, expedita quod? Suscipit, obcaecati. Ipsa fugiat molestias
+      sint.
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, ex hic
+      nulla illo, cumque a adipisci doloribus esse quos minima doloremque cum
+      culpa quas laudantium! Dolorum similique ipsa eaque culpa!
+    </p>
+    <!-- 
+          before
+          after
+          selection
+          first-line
+          first-letter
+       -->
+
+    <h1>Vishal</h1>
+  </body>
+</html>

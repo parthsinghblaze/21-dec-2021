@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Classes</title>
+    <style>
+      h1 {
+        color: blue;
+        transition-duration: 1s;
+      }
+
+      h1:hover {
+        color: red;
+        background-color: black;
+      }
+
+      p:hover {
+        color: green;
+      }
+
+      .btn1:hover {
+        background-color: black;
+        color: white;
+      }
+
+      .btn1:focus {
+        background-color: yellow;
+        color: yellowgreen;
+      }
+
+      a:active {
+        color: green;
+      }
+
+      .btn2:hover {
+        background-color: pink;
+      }
+
+      .btn2:focus {
+        background-color: red;
+      }
+
+      .btn2:active {
+        background-color: yellow;
+      }
+      h1[title="j"] {
+        color: yellow;
+      }
+
+      table {
+        border: 1px solid black;
+        width: 400px;
+        margin: 100px auto;
+        border-collapse: collapse;
+      }
+
+      table tr td {
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      /* table tr:first-child {
+        background-color: skyblue;
+      }
+
+      table tr:last-child {
+        background-color: slateblue;
+      } */
+
+      /* table tr:nth-child(odd) {
+        background-color: slategray;
+      }
+
+      table tr:nth-child(even) {
+        background-color: steelblue;
+      }
+
+      table tr {
+        transition-duration: 0.6s;
+      }
+
+      table tr:hover {
+        background-color: tan;
+      } */
+
+      table tr td:first-child {
+        background-color: skyblue;
+      }
+
+      input[type="number"]:invalid {
+        background-color: red;
+      }
+    </style>
+
+    <!-- <style>
+        button{
+            color: red;
+            padding: 8px 30px;
+            border: 2px solid red;
+            background-color: transparent;
+            transition-duration: .6s;
+        }
+
+        button:hover{
+            background-color: red;
+            color: white;
+        }
+    </style> -->
+  </head>
+  <body>
+    <input type="number" max="18" />
+    <h1 title="j">juhil</h1>
+    <h1 title="h">hey</h1>
+    <button class="btn1">Click Me</button>
+    <a href="">Google</a>
+    <button class="btn2">Active Me</button>
+
+    <table>
+      <tr>
+        <td>1</td>
+        <td>Juhil</td>
+        <td>Surat</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Juhil</td>
+        <td>Surat</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Juhil</td>
+        <td>Surat</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Juhil</td>
+        <td>Surat</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Juhil</td>
+        <td>Surat</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Juhil</td>
+        <td>Surat</td>
+      </tr>
+    </table>
+
+    <!-- <button>Login</button> -->
+    <!-- <h1>Heading 1</h1>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur distinctio ratione necessitatibus nisi mollitia illum reiciendis tempore non earum doloremque, dicta id facere quaerat numquam dignissimos quos magni, delectus rerum.
+    </p> -->
+  </body>
+</html>

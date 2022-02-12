@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 90%;
+        height: 100vh;
+        border: 10px solid black;
+        margin: 0 auto;
+        display: flex;
+        /* x axis */
+        /* space-between flex-end center flex-start space-around space-evenly*/
+        justify-content: space-evenly;
+        /* for y axis */
+        /* stretch , flex-end , center , flex-start  */
+        align-items: flex-start;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .box1 {
+        background-color: crimson;
+      }
+
+      .box2 {
+        background-color: darkblue;
+      }
+
+      .box3 {
+        background-color: darkgoldenrod;
+      }
+
+      .box h1 {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">
+        <h1>Box 1</h1>
+      </div>
+      <div class="box box2">
+        <h1>Box 2</h1>
+      </div>
+      <div class="box box3">
+        <h1>Box 3</h1>
+      </div>
+      <div class="box box2">
+        <h1>Box 2</h1>
+      </div>
+    </div>
+
+    <!-- .box$*10 -->
+
+    <!-- div>h1{Section 1} -->
+    <!-- ul>li*10 -->
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+ <!-- 
+        Combinator selector 
+        1 -> descendant selector (space ( ))
+        2 -> direct child selector (>)
+        3 -> General sibling selector (~)
+        4 -> Adjacent sibling selector (+)
+     -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        div{
+            border: 2px solid black;
+        }
+        
+        div p{
+            color: red;
+        }
+
+        ul li{
+            color: blue;
+        }
+
+        ul li ul li{
+            color: green;
+        }
+        
+        div ~ p {
+            color: orchid;
+            font-size: 32px;
+        }
+
+        div + p{
+            color: orange;
+            font-size: 24px;
+        }
+    </style> -->
+
+    <style>
+        .main-box > p{
+            color: red;
+        }
+
+        section p{
+            font-size: 24px;
+        }
+
+        .text-blue{
+            color: blue;
+        }
+
+        .text-pink{
+            color: pink;
+        }
+
+        section{
+            border: 10px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga id enim impedit et incidunt neque laborum iusto velit similique rerum sint, expedita a earum ea quae reiciendis! Nam, assumenda ut.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sequi atque magni? Corporis porro aliquam perspiciatis voluptatibus maxime itaque nihil fuga quas sit quam, eos minima harum, blanditiis voluptatum modi?
+        </p>
+        <section>
+            <p class="text-blue">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem numquam illum eveniet eos nesciunt ratione quod libero accusantium quam? In enim similique quis debitis porro incidunt, libero ullam blanditiis ea?
+            </p>
+        </section>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum corrupti, accusantium quisquam facilis nobis ab impedit quis ipsum aliquid nemo consectetur labore sunt asperiores exercitationem quaerat debitis quos facere distinctio!
+        </p>
+        <section>
+            <p class="text-pink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo assumenda animi inventore maiores illo sunt, obcaecati, quos suscipit praesentium porro debitis eligendi similique ex facilis repellat, aspernatur quia ab cupiditate.
+            </p>
+        </section>
+    </div>
+
+    <!-- <ul>
+        <li>Apple</li>
+        <li>Samsung
+            <ul>
+                <li>Galaxy A17</li>
+                <li>Galaxy A17</li>
+                <li>Galaxy A17</li>
+                <li>Galaxy A17</li>
+            </ul>
+        </li>
+        <li>Oppo</li>
+    </ul>
+   
+
+     <div>
+         <p>
+             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, velit nisi vitae unde sed repellat perferendis ipsa, quos saepe quo distinctio aliquid, natus aliquam placeat mollitia eius sunt ipsum. Eos.
+         </p>
+         <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde velit molestiae ipsam esse assumenda saepe dolor? Doloribus illo fuga quidem obcaecati! Sint dignissimos modi harum nemo ducimus similique tempora quod.
+         </p>
+     </div>
+
+     <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sit necessitatibus sint eum modi quam atque saepe! Eveniet rem magnam fugiat temporibus, consectetur provident quaerat earum facere tempore deserunt asperiores.
+     </p>
+
+     <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, corrupti? Neque aliquam modi, at laborum maiores esse non nihil, ullam architecto saepe, consectetur reiciendis dolorem impedit. Delectus ipsam cumque eos!
+     </p>
+
+     <p>
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut fugiat voluptatibus repellendus ducimus eaque sit perspiciatis voluptates vero illum, itaque dicta corrupti enim eos dolorum minus dolore illo amet quae.
+     </p>
+
+     <p>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quis ipsam eos sapiente, sint voluptas vitae, quae facere nam molestias nulla cumque saepe. Suscipit molestias quis vero tempore nemo officia.
+     </p> -->
+
+</body>
+</html>

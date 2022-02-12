@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <form action="">
+      <table cellpadding="10px" width="100%">
+        <tr>
+          <td align="right"><label for="">First Name</label></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td align="right"><label for="">Second Name</label></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td align="right"><label for="">Password</label></td>
+          <td><input type="password" /></td>
+        </tr>
+       
+        <tr>
+          <td><input type="submit" /></td>
+        </tr>
+      </table>
+    </form> -->
+    <!-- for -> label 
+    id -> input  -->
+    <form action="table.html" method="post">
+      <label for="fname">First Name </label>
+      <input
+        type="text"
+        required
+        id="fname"
+        name="firstname"
+        value="parth"
+        readonly
+      />
+      <br />
+      <br />
+      <label for="pass">Last Name</label>
+      <input type="text" required name="lastname" />
+      <br />
+      <br />
+      <label for="">Password</label>
+      <input type="password" tabindex="1" name="password" id="pass" />
+      <br />
+      <br />
+      <label for="age">Age</label>
+      <input type="number" id="age" tabindex="3" max="18" min="10" />
+      <br />
+      <br />
+      <label for="">Email</label>
+      <input type="email" tabindex="2" />
+      <br />
+      <br />
+      <!-- 
+            for -> label ,
+            id -> input
+         -->
+      <label for="">Gender</label>
+      <input type="radio" id="male" name="gender" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" />
+      <label for="female">Female</label>
+
+      <br />
+      <br />
+
+      <label for="">Hobbies</label>
+      <input type="checkbox" id="football" />
+      <label for="football">Football</label>
+      <input type="checkbox" id="cricket" />
+      <label for="cricket">Cricket</label>
+      <input type="checkbox" id="tennis" /> <label for="tennis">Tennis</label>
+      <br />
+      <br />
+
+      <label for="">City</label>
+      <select>
+        <option>Surat</option>
+        <option value="">Valsad</option>
+        <option value="">Navsari</option>
+      </select>
+      <br />
+      <br />
+
+      <label for="">Address</label>
+      <textarea rows="10" cols="6"></textarea>
+      <br />
+      <br />
+
+      <input type="submit" value="Send" />
+      <input type="reset" value="clear" />
+    </form>
+  </body>
+</html>

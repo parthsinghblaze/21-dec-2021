@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 
+        word => red , orange
+        2 -> hexacode #123456
+        3 -> rgb  (red,green,blue)
+        4 -> rgba (red,green,blue,alpha)
+     -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        margin: 100px auto;
+      }
+
+      .box1 {
+        background-color: red;
+        opacity: 0.3;
+        /* 0% 100% , 0 1 */
+      }
+
+      .box2 {
+        background-color: #18998850;
+      }
+
+      .box3 {
+        /* 255  */
+        background-color: rgb(191, 44, 191);
+      }
+
+      .box4 {
+        /* background-color: rgb(255, 0, 0); */
+        background-color: rgba(238, 255, 0, 0.4);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1">
+      <h1>Box1</h1>
+    </div>
+    <div class="box box2">
+      <h1>Box2</h1>
+    </div>
+    <div class="box box3">
+      <h1>Box3</h1>
+    </div>
+    <div class="box box4">
+      <h1>Box 4</h1>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 90%;
+        height: 100vh;
+        border: 10px solid black;
+        margin: 0 auto;
+        display: flex;
+        /* j-c => x axis */
+        /* a-i => y axis */
+        /* justify-content: center; */
+        /* align-items: center; */
+
+        /* now i am changing the direction of flex */
+        flex-direction: column-reverse;
+        /* j-c => y axis */
+        /* a-i => x axis */
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+      }
+
+      .box1 {
+        background-color: crimson;
+        /* order: 2; */
+      }
+
+      .box2 {
+        background-color: darkblue;
+        /* order: 3; */
+      }
+
+      .box3 {
+        background-color: darkgoldenrod;
+        /* order: 1; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">
+        <h1>Box 1</h1>
+      </div>
+      <div class="box box2">
+        <h1>Box 2</h1>
+      </div>
+      <div class="box box3">
+        <h1>Box 3</h1>
+      </div>
+    </div>
+  </body>
+</html>

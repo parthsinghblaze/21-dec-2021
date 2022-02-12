@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* display : flex 
+      align-items 
+      justify-content 
+      flex-direction 
+       /*child  */
+      /* flex-grow order */
+
+      .container {
+        width: 90%;
+        height: 100vh;
+        border: 10px solid black;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        /* flex-grow: 1; */
+        /* flex-basis: 300px; */
+        /* flex-basis: 300px; */
+        /* flex-grow: 1; */
+      }
+
+      .box1 {
+        background-color: crimson;
+        /* flex-grow: 1; */
+      }
+
+      .box2 {
+        background-color: darkblue;
+        /* flex-grow: 2; */
+        flex-shrink: 1;
+        align-self: flex-end;
+      }
+
+      .box3 {
+        background-color: darkgoldenrod;
+        /* flex-grow: 3; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">
+        <h1>Box 1</h1>
+      </div>
+      <div class="box box2">
+        <h1>Box 2</h1>
+      </div>
+      <div class="box box3">
+        <h1>Box 3</h1>
+      </div>
+    </div>
+  </body>
+</html>
