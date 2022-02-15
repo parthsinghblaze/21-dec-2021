@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        color: blue;
+        box-sizing: border-box;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        margin: 100px auto;
+        transition-duration: 0.6s;
+      }
+
+      .box1 {
+        background-color: skyblue;
+      }
+
+      .box1:hover {
+        /* transform: perspective(800px) rotateX(30deg) rotateY(-180deg)
+          rotateZ(30deg); */
+        /* transform: rotate3d(x, y, z, 30deg); */
+        transform: perspective(600px) rotate3d(-1, -1, 1, 45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        1 -> rotate 
+        2 -> translate
+        3 -> scale 
+        4 -> skew
+     -->
+
+    <div class="box box1">
+      <h1>Rotate X</h1>
+    </div>
+  </body>
+</html>
