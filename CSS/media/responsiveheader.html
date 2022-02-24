@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .container {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      header {
+        width: 100%;
+        background-color: skyblue;
+        padding: 20px 0;
+      }
+
+      .top-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav ul {
+        display: flex;
+        gap: 20px;
+      }
+
+      button {
+        display: none;
+      }
+
+      @media screen and (max-width: 768px) {
+        .top-header {
+          display: block;
+          position: relative;
+        }
+
+        nav {
+          display: none;
+        }
+
+        nav ul {
+          flex-direction: column;
+        }
+
+        button {
+          position: absolute;
+          top: 10px;
+          right: 0;
+          display: block;
+        }
+
+        button:focus + nav {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="top-header">
+          <div class="logo"><h1>LOGO</h1></div>
+          <button>menu</button>
+          <nav>
+            <ul>
+              <li>Home</li>
+              <li>Home</li>
+              <li>Home</li>
+              <li>Home</li>
+              <li>Home</li>
+              <li>Home</li>
+              <li>Home</li>
+              <li>Home</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- 0 -768px  -->
+  </body>
+</html>
