@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      .section {
+        width: 100%;
+      }
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .service-main-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
+
+      .service-main-box .service-box {
+        display: flex;
+        gap: 30px;
+        padding: 20px;
+      }
+
+      .service-main-box .service-box * {
+        margin-bottom: 10px;
+      }
+
+      .service-main-box .service-box p {
+        line-height: 1.4;
+      }
+
+      button {
+        background-color: transparent;
+        padding: 10px;
+        border: none;
+      }
+      .service-box:hover h2 {
+        color: green;
+      }
+
+      .service-box-icon h2 {
+        color: green;
+      }
+
+      button:hover {
+        color: green;
+      }
+
+      button i {
+        transition-duration: 0.6s;
+      }
+
+      button:hover i {
+        transform: translateX(10px);
+      }
+
+      @media screen and (max-width: 768px) {
+        .service-main-box {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section">
+      <div class="container">
+        <div class="service-main-box">
+          <div class="service-box">
+            <div class="service-box-icon">
+              <h2><i class="fa-solid fa-leaf"></i></h2>
+            </div>
+            <div class="service-box-desp">
+              <h2>Garden Care</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae suscipit nemo laudantium provident accusantium
+                deleniti, sit accusamus, debitis quam nihil quisquam enim id
+                aliquid cumque ducimus quos dolorum unde corrupti!
+              </p>
+              <button>Read more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+          <div class="service-box">
+            <div class="service-box-icon">
+              <h2><i class="fa-solid fa-leaf"></i></h2>
+            </div>
+            <div class="service-box-desp">
+              <h2>Garden Care</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae suscipit nemo laudantium provident accusantium
+                deleniti, sit accusamus, debitis quam nihil quisquam enim id
+                aliquid cumque ducimus quos dolorum unde corrupti!
+              </p>
+              <button>Read more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+          <div class="service-box">
+            <div class="service-box-icon">
+              <h2><i class="fa-solid fa-leaf"></i></h2>
+            </div>
+            <div class="service-box-desp">
+              <h2>Garden Care</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae suscipit nemo laudantium provident accusantium
+                deleniti, sit accusamus, debitis quam nihil quisquam enim id
+                aliquid cumque ducimus quos dolorum unde corrupti!
+              </p>
+              <button>Read more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+          <div class="service-box">
+            <div class="service-box-icon">
+              <h2><i class="fa-solid fa-leaf"></i></h2>
+            </div>
+            <div class="service-box-desp">
+              <h2>Garden Care</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae suscipit nemo laudantium provident accusantium
+                deleniti, sit accusamus, debitis quam nihil quisquam enim id
+                aliquid cumque ducimus quos dolorum unde corrupti!
+              </p>
+              <button>Read more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
