@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        margin: 100px auto;
+      }
+
+      .box1 {
+        background-image: linear-gradient(red, blue, green, black);
+      }
+
+      .box2 {
+        background-image: linear-gradient(black, transparent);
+        border-radius: 50%;
+      }
+
+      .box3 {
+        background-image: repeating-linear-gradient(red 10%, black 20%);
+      }
+
+      .box4 {
+        /* background-image: linear-gradient(to top right, red, blue); */
+        background-image: linear-gradient(to top right, red 50%, blue 50%);
+      }
+
+      .box5 {
+        height: 300px;
+        background-image: radial-gradient(circle at bottom, orange, yellow);
+      }
+
+      .box6 {
+        background-image: repeating-radial-gradient(red 10%, black 20%);
+      }
+
+      .box7 {
+        width: 100%;
+        height: 100vh;
+        /* background-color: skyblue; */
+        background-image: linear-gradient(
+            rgba(214, 185, 54, 0.637),
+            transparent,
+            rgba(214, 185, 54, 0.637)
+          ),
+          url(../gallery/img/img1.jpg);
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box7"></div>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+    <div class="box box6"></div>
+  </body>
+</html>

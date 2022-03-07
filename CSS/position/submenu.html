@@ -39,15 +39,23 @@
       .sub-menu {
         background-color: yellow;
         position: absolute;
-        top: 100%;
+        top: -300%;
         left: 0;
         width: 150px;
         z-index: 1;
-        display: none;
+        transition-duration: 1s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1;
+
+        /* display: none; */
       }
 
       .menu .list:hover .sub-menu {
-        display: block;
+        /* display: block; */
+        top: 100%;
+        opacity: 1;
+        visibility: visible;
       }
 
       .sub-list {

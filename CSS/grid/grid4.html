@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 90%;
+        margin: 100px auto;
+        border: 2px solid black;
+        display: grid;
+        /* grid-template-columns: max-content; */
+        /* grid-template-columns: minmax( min-width , max-width ); */
+        /* grid-template-columns: minmax(700px, 1000px); */
+        /* minmax() */
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 30px;
+      }
+
+      .box {
+        background-color: antiquewhite;
+      }
+
+      .box1 {
+        background-color: crimson;
+      }
+
+      .box2 {
+        background-color: darkblue;
+      }
+
+      .box3 {
+        background-color: green;
+      }
+
+      .box4 {
+        background-color: blueviolet;
+      }
+
+      .box5 {
+        background-color: brown;
+      }
+
+      .box6 {
+        background-color: cadetblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">
+        <h1>Box 1</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
+          molestias pariatur ducimus necessitatibus doloremque maiores optio
+          soluta non aliquid distinctio deserunt ratione totam cupiditate,
+          suscipit quaerat exercitationem natus, culpa nesciunt.
+        </p>
+      </div>
+      <div class="box box2">
+        <h1>Box 2</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
+          molestias pariatur ducimus necessitatibus doloremque maiores optio
+          soluta non aliquid distinctio deserunt ratione totam cupiditate,
+          suscipit quaerat exercitationem natus, culpa nesciunt.
+        </p>
+      </div>
+      <div class="box box3">
+        <h1>Box 3</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
+          molestias pariatur ducimus necessitatibus doloremque maiores optio
+          soluta non aliquid distinctio deserunt ratione totam cupiditate,
+          suscipit quaerat exercitationem natus, culpa nesciunt.
+        </p>
+      </div>
+      <div class="box box4">
+        <h1>Box 4</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
+          molestias pariatur ducimus necessitatibus doloremque maiores optio
+          soluta non aliquid distinctio deserunt ratione totam cupiditate,
+          suscipit quaerat exercitationem natus, culpa nesciunt.
+        </p>
+      </div>
+      <div class="box box5">
+        <h1>Box 5</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
+          molestias pariatur ducimus necessitatibus doloremque maiores optio
+          soluta non aliquid distinctio deserunt ratione totam cupiditate,
+          suscipit quaerat exercitationem natus, culpa nesciunt.
+        </p>
+      </div>
+      <div class="box box6">
+        <h1>Box 6</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
+          molestias pariatur ducimus necessitatibus doloremque maiores optio
+          soluta non aliquid distinctio deserunt ratione totam cupiditate,
+          suscipit quaerat exercitationem natus, culpa nesciunt.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
