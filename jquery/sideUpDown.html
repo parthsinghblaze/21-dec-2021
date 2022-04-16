@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="fade-out">Slide Up</button>
+    <button class="fade-in">Slide Down</button>
+    <button class="fade-in-out">Slide Toggle</button>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+      laboriosam accusantium reprehenderit saepe fuga iste neque officiis,
+      tempora laborum atque magni nostrum officia excepturi voluptatem, maiores
+      tenetur praesentium minus sint.
+    </p>
+    <div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse rem quasi
+      ad dolorem corrupti cumque, quia accusamus voluptates itaque tenetur ea
+      consectetur repudiandae unde impedit corporis repellendus, nam quo
+      accusantium!
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".fade-out").click(function () {
+          $("p").slideUp(1000);
+        });
+
+        $(".fade-in").click(function () {
+          $("p").slideDown();
+        });
+
+        $(".fade-in-out").click(function () {
+          $("p").slideToggle();
+        });
+      });
+    </script>
+  </body>
+</html>

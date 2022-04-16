@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="hide-btn">Hide</button>
+    <button class="show-btn">Show</button>
+    <button class="hide-show-btn">Toggle</button>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus
+      delectus quidem harum qui ut. Quod, dolores ad quibusdam, obcaecati cum
+      debitis earum esse architecto nulla similique expedita iusto vero et?
+    </p>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // =====HIDE==========
+
+        $(".hide-btn").click(function () {
+          $("p").hide();
+        });
+
+        // ===========SHOW========
+
+        $(".show-btn").click(function () {
+          $("p").show();
+        });
+
+        // ==== toggle =====
+
+        $(".hide-show-btn").click(function () {
+          $("p").toggle();
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="addData()">Add Element</button>
+    <script>
+      let arry1 = ["nikita", "priya", "aloki"];
+
+      //   push will add an element at last
+      //   pop will remove an element at first
+
+      //   arry1.pop();
+      //   console.log(arry1);
+
+      // unshift => will add an element at first
+      arry1.unshift("priya");
+      console.log(arry1);
+      // shift will remove an element from first
+      arry1.shift();
+      arry1.shift();
+      arry1.shift();
+
+      console.log(arry1);
+
+      //   console.log(arry1[arry1.length - 1]);
+
+      //   function addData() {
+      //     let name = prompt("Enter Name");
+      //     arry1.push(name);
+      //     console.log(arry1);
+      //   }
+    </script>
+  </body>
+</html>

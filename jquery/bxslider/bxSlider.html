@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bxslider-4-4.2.12/dist/jquery.bxslider.css" />
+    <style>
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider">
+      <img src="img1.jpg" alt="" />
+      <img src="img2.jpg" alt="" />
+      <img src="img3.jpg" alt="" />
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="bxslider-4-4.2.12/dist/jquery.bxslider.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".slider").bxSlider();
+      });
+    </script>
+  </body>
+</html>

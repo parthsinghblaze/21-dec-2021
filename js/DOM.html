@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- DOM => Document Object Modal -->
+    <p id="para1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas odit ipsum cumque amet, quam sint harum magni eum placeat. Consectetur similique, odio est eaque quos aliquam fugiat autem debitis. Suscipit.</p>
+    <h1>Hello World</h1>
+    <img src="../HTML/animals.jpg" width="300px" alt="">
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet delectus aliquid dolores id eaque adipisci in atque earum corrupti quis ducimus magni, rem doloribus facere laudantium, maxime quidem magnam sed.
+    </p>
+    <script>
+        console.log(document)
+        let para1 = document.getElementById("para1")
+        console.log(para1.textContent)
+        para1.textContent = "Hello World"
+        para1.style.fontSize = "100px"
+    </script>
+</body>
+</html>

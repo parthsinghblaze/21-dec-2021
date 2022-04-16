@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="fade-out">Fade Out</button>
+    <button class="fade-in">Fade In</button>
+    <button class="fade-in-out">Fade-in-out</button>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+      laboriosam accusantium reprehenderit saepe fuga iste neque officiis,
+      tempora laborum atque magni nostrum officia excepturi voluptatem, maiores
+      tenetur praesentium minus sint.
+    </p>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".fade-out").click(function () {
+          $("p").fadeOut(5000);
+        });
+
+        $(".fade-in").click(function () {
+          $("p").fadeIn(3000);
+        });
+
+        $(".fade-in-out").click(function () {
+          $("p").fadeToggle();
+        });
+      });
+    </script>
+  </body>
+</html>

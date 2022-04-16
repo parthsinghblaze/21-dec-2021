@@ -10,6 +10,9 @@ body {
 
 :root {
   --primary-color: rgb(231, 5, 102);
+  --secondary-color: #1a2c79;
+  --gradient-color: linear-gradient(75deg, #1c2e7b 10%, #e60264);
+  --gradient-color-opacity: linear-gradient(75deg, #1c2e7b80 10%, #e6026480);
 }
 
 /* 1rem-> 16px 
@@ -25,7 +28,8 @@ html {
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 2rem;
+  line-height: 1.6;
 }
 
 @media screen and (max-width: 768px) {
@@ -47,6 +51,68 @@ p {
   padding: 0 1rem;
 }
 
+.btn {
+  padding: 1.2rem 2.4rem;
+  font-size: 1.6rem;
+  background-color: transparent;
+  border: 0.2rem solid black;
+  border-radius: 0.6rem;
+  transition: 0.6s;
+}
+
+.btn-white {
+  background-color: white;
+  border-color: white;
+  color: var(--secondary-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.btn-white:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.py-5 {
+  padding: 6rem 0;
+}
+
+.gradient-icon {
+  background-image: var(--gradient-color);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 3.2rem;
+}
+
+.section-title {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 3.2rem;
+}
+
+.section-title p {
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .section-title {
+    width: 100%;
+  }
+}
 /* 
     <= 578px 
     >= 576px
@@ -106,6 +172,13 @@ p {
 /* common css classes end */
 
 /* header start */
+.top-section {
+  background-color: skyblue;
+  background-image: var(--gradient-color-opacity), url(../img/banner1.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
 .top-header {
   display: flex;
   align-items: center;
@@ -156,17 +229,293 @@ p {
 }
 
 /* header end */
-.landing-desp-box {
-  border: 2px solid black;
-  padding: 20px;
+
+/* landing start */
+.landing-desp-section {
+  padding: 15rem 0;
 }
-.landing-desp-box h1 {
-  font-size: 30px;
-  text-transform: capitalize;
-  padding-top: 100px;
-  line-height: 50px;
+.landing-desp-main .landing-desp-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
 }
-.landing-desp-box p {
-  font-size: 30px;
-  padding-top: 20px;
+
+.landing-desp-main .landing-desp-box h1 {
+  font-size: 4.2rem;
+}
+
+.menu-button {
+  display: none;
+}
+
+/* landing end */
+
+/* media query  */
+@media screen and (max-width: 992px) {
+  .top-header .nav {
+    /* display: none; */
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: -50%;
+    height: 100vh;
+    width: 50%;
+    transition-duration: .6s;
+  }
+
+  .top-header .open-nav{
+    left: 0;
+  }
+
+  .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.308);
+    display: none;
+  }
+
+  .open-overlay{
+    display: block;
+  }
+
+  .top-header nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 0;
+  }
+  
+
+  .menu-button {
+    font-size: 3.2rem;
+    background-color: transparent;
+    border: none;
+    color: white;
+    display: block;
+  }
+
+  .landing-desp-main .landing-desp-box {
+    width: 100%;
+  }
+}
+
+/* about section start */
+.about-section-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about-section-container p {
+  font-size: 1.6rem;
+}
+
+.about-section-box:nth-child(1) {
+}
+
+.about-section-box:nth-child(2) {
+  background-color: rgb(0, 255, 98);
+}
+
+.about-section-upper-box h2 {
+  font-size: 3.2rem;
+}
+
+.about-section-lower-box {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.about-section-lower-inner-box h3 {
+  font-size: 2.4rem;
+  margin: 1rem 0;
+}
+
+.about-section-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .about-section-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* about section end */
+
+.service-section-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.service-section-box {
+  display: flex;
+  gap: 2rem;
+  padding: 5rem 4rem;
+  transition-duration: 0.6s;
+}
+
+.service-section-box:hover {
+  box-shadow: 12px 12px 24px #afafaf, -12px -12px 24px #ffffff;
+}
+
+.desp-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.desp-box h2 {
+  font-size: 2.4rem;
+  transition: 0.6s;
+}
+
+.desp-box button {
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+}
+
+.desp-box button i {
+  transition: 0.6s;
+}
+
+.service-section-box:hover h2 {
+  color: var(--primary-color);
+}
+
+.service-section-box:hover button i {
+  transform: translateX(1.6rem);
+}
+
+.service-button {
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .service-section-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.statistics-section-main {
+  padding: 10rem 0;
+  background-image: var(--gradient-color-opacity), url(../img/banner1.jpg);
+  background-attachment: fixed;
+  color: white;
+}
+
+.statistics-section-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.statistics-section-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.statistics-section-box span,
+.statistics-section-box h2 {
+  font-size: 3.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .statistics-section-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* 17 -> 1:30  */
+
+.testimonials-section-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.testimonials-footer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.testimonials-footer img {
+  border-radius: 50%;
+}
+
+.testimonials-footer h3 {
+  font-size: 1.6rem;
+}
+
+.testimonials-footer p {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials-section-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+  }
+
+  .testimonials-section-box {
+    padding: 2rem;
+    box-shadow: 12px 12px 24px #afafaf, -12px -12px 24px #ffffff;
+  }
+}
+
+footer {
+  background-image: var(--gradient-color);
+  color: white;
+}
+
+.footer-section-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.footer-section-box h2 {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+.footer-section-box ul {
+  font-size: 1.6rem;
+}
+
+.footer-section-box ul li {
+  line-height: 2;
+}
+
+.footer-section-box ul li i {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-section-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .footer-section-box h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
 }

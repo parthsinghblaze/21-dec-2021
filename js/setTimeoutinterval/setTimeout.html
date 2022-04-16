@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1></h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
+      provident natus aperiam quo laboriosam fuga consequatur quae nostrum?
+      Voluptates sint nihil quidem minus amet doloribus perferendis eius
+      reiciendis numquam! Est.
+    </p>
+    <script>
+      let obj = {
+        firstName: "parth",
+        lastName: "singh",
+        city: "Surat",
+        details: function () {
+          return `My name is ${this.firstName} ${this.lastName} and i live in ${this.city}`;
+        },
+      };
+
+      const timerFunction = () => {
+        const date = new Date();
+        let myTime = date.toLocaleTimeString();
+        document.querySelector("h1").textContent = myTime;
+      };
+
+      setInterval(timerFunction, 1000);
+
+      //   setInterval(() => {
+      //     const date = new Date();
+      //     let myTime = date.toLocaleTimeString();
+      //     document.querySelector("h1").textContent = myTime;
+      //   }, 1000);
+
+      //   setTimeout(function , timing)
+      //   console.log("Hey");
+      //   console.log("Hey");
+      //   console.log("Hey");
+      //   setTimeout(function () {
+      //     document.querySelector("p").style.color = "black";
+      //   }, 5000);
+      //   console.log("Hey");
+      //   console.log("Hey");
+      //   console.log("Hey");
+      //   console.log("Hey");
+      //   console.log("Hey");
+    </script>
+  </body>
+</html>
