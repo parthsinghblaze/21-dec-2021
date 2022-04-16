@@ -7,8 +7,29 @@
     <title>Document</title>
     <link rel="stylesheet" href="bxslider-4-4.2.12/dist/jquery.bxslider.css" />
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       img {
         width: 100%;
+      }
+
+      .bx-wrapper {
+        border: none;
+      }
+
+      .bx-wrapper .bx-pager {
+        bottom: 30px;
+      }
+
+      .bx-wrapper .bx-pager.bx-default-pager a {
+        background-color: red;
+      }
+
+      .bx-wrapper .bx-pager.bx-default-pager a.active {
+        background-color: #ff000040;
       }
     </style>
   </head>
@@ -26,7 +47,12 @@
     <script src="bxslider-4-4.2.12/dist/jquery.bxslider.min.js"></script>
     <script>
       $(document).ready(function () {
-        $(".slider").bxSlider();
+        $(".slider").bxSlider({
+          speed: 500,
+          auto: true,
+          pause: 5000,
+          autoHover: true,
+        });
       });
     </script>
   </body>

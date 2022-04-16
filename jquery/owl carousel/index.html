@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <style>
+      .item {
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <h2>Box 1</h2>
+      </div>
+      <div class="item">
+        <h2>Box 2</h2>
+      </div>
+      <div class="item">
+        <h2>Box 3</h2>
+      </div>
+      <div class="item">
+        <h2>Box 4</h2>
+      </div>
+      <div class="item">
+        <h2>Box 5</h2>
+      </div>
+      <div class="item">
+        <h2>Box 6</h2>
+      </div>
+      <div class="item">
+        <h2>Box 7</h2>
+      </div>
+      <div class="item">
+        <h2>Box 8</h2>
+      </div>
+      <div class="item">
+        <h2>Box 9</h2>
+      </div>
+      <div class="item">
+        <h2>Box 10</h2>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/owl.carousel.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          margin: 10,
+          loop: true,
+          nav: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 5,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
