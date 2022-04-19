@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
+      beatae, eveniet illo deserunt, ad quaerat rem quas tempore repellat
+      debitis eaque eligendi pariatur amet asperiores magni mollitia eum
+      architecto possimus?
+    </p>
+    <ul>
+      <li><a href="">home</a></li>
+      <li><a href="">home</a></li>
+      <li><a href="">home</a></li>
+      <li><a href="">home</a></li>
+      <li><a href="">home</a></li>
+      <li><a href="">home</a></li>
+      <li>
+        <a href="">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+            est vel illo iure, a, corrupti deserunt at temporibus reiciendis,
+            magnam rem atque facilis quas dolorum ut veritatis explicabo sit
+            soluta!
+          </p>
+        </a>
+      </li>
+      <li><a href="">home</a></li>
+      <li><a href="">home</a></li>
+      <li><a href="">home</a></li>
+    </ul>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // parent , parents , parentsUntil
+      //   children , find
+      $(document).ready(function () {
+        // $("a").parentsUntil("html").css({
+        //   border: "1px solid black",
+        // });
+
+        $("ul").find("p").css({
+          border: "2px solid red",
+        });
+      });
+    </script>
+  </body>
+</html>
